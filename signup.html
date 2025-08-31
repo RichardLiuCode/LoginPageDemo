@@ -31,7 +31,7 @@
                     window.location.replace("login.html");
                 })
                 .catch(function (error) {
-                    document.getElementById("status").innerText = error.replace("Error: ","");
+                    document.getElementById("status").innerText = error.toString().replace("Error: ", "");
                     setTimeout(function () {
                         document.getElementById("status").innerText = ""
                     }, 3150);
