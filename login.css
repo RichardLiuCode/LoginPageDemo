@@ -16,12 +16,30 @@ body {
     height: 40px;
     font-size: 27px;
     margin-bottom: 15px;
+    border-width: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: gray;
+}
+
+#user:focus,
+#pass:focus {
+    outline: none;
+    border-color: gray gray rgb(122, 122, 252) gray;
+    border-width: 1px 1px 3px 1px;
+    margin-bottom: 13px;
 }
 
 #login {
     width: 120px;
     height: 35px;
     font-size: 23px;
+    user-select: none;
+    border-style: solid;
+    border-color: rgb(3, 140, 74);
+    border-width: 2px;
+    border-radius: 0px;
+    background-color: rgb(14, 251, 6);
 }
 
 .SubmitButtonContainer,
@@ -40,4 +58,11 @@ body {
 #status {
     font-family: arial;
     text-align: left;
+    color: red;
+    font-size: 17px;
+}
+
+.signUpHint {
+    font-size: 17px;
+    user-select: none;
 }
