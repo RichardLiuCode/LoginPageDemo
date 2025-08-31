@@ -30,26 +30,26 @@ body {
     margin-bottom: 13px;
 }
 
-#login {
+#create {
     width: 120px;
     height: 35px;
     font-size: 23px;
     user-select: none;
     border-style: solid;
-    border-color: rgb(3, 140, 74);
+    border-color: rgb(3, 10, 110);
     border-width: 2px;
     border-radius: 0px;
-    background-color: rgb(14, 251, 6);
+    background-color: rgb(33, 33, 242);
     color: white;
 }
 
-.SubmitButtonContainer,
+.loginButtonContainer,
 #status {
     width: 407px;
     margin: 0 auto;
 }
 
-.SubmitButtonContainer {
+.loginButtonContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +63,7 @@ body {
     font-size: 17px;
 }
 
-.signUpHint {
+.loginButtonContainer {
     font-size: 17px;
     user-select: none;
 }
