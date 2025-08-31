@@ -15,3 +15,25 @@ body {
     height: 40px;
     font-size: 27px;
 }
+
+#login {
+    width: 120px;
+    height: 35px;
+    font-size: 23px;
+}
+
+.SubmitButtonContainer,
+#status {
+    width: 407px;
+    margin: 0 auto;
+}
+
+.SubmitButtonContainer {
+    text-align: right;
+    height: 40px;
+}
+
+#status {
+    font-family: arial;
+    text-align: left;
+}
