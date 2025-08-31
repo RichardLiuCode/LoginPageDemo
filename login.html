@@ -16,6 +16,8 @@
     <input id="pass" placeholder="Enter you Password">
     <br>
     <button id="login">Login</button>
+    <br>
+    <p id="status"></p>
     <script>
         document.getElementById("login").addEventListener("click", function () {
             var user = document.getElementById("user").value;
@@ -23,6 +25,9 @@
             auth.signInWithEmailAndPassword(user, pass)
                 .then(function () {
                     window.location.replace("main.html")
+                })
+                .catch(function (error) {
+                    document.getElementById("status").innerText = error;
                 })
         })
     </script>
