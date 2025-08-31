@@ -1,6 +1,7 @@
 body {
     background-color: white;
     text-align: center;
+    font-family: arial;
 }
 
 .MAIN-h1 {
@@ -30,7 +31,9 @@ body {
 }
 
 .SubmitButtonContainer {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
 }
 
