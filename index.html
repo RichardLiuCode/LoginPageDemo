@@ -24,12 +24,22 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+        var auth = firebase.auth()
     </script>
 </head>
 
 <body>
-<input type="email" id="email">
-<input type="password" id="pass">
+    <input type="email" id="user">
+    <br>
+    <input type="password" id="pass">
+    <button id="create">Sign UP</button>
+    <script>
+        var email = document.getElementById("user").value;
+        var password = document.getElementById("pass").value;
+        document.getElementById("create").addEventListener("click", function () {
+            createUserWithEmailAndPassword(email, password)
+        })
+    </script>
 </body>
 
 </html>
