@@ -16,11 +16,19 @@
     <input type="password" placeholder="Set your password" id="pass">
     <br>
     <button id="create">Sign UP</button>
+    <br>
+    <p id="status"></p>
     <script>
         document.getElementById("create").addEventListener("click", function () {
             var email = document.getElementById("user").value;
             var password = document.getElementById("pass").value;
             auth.createUserWithEmailAndPassword(email, password)
+                .then(function () {
+                    window.location.replace("login.html");
+                })
+                .catch(function (error) {
+                    document.getElementById("status").innerText = error;
+                })
         })
     </script>
 </body>
