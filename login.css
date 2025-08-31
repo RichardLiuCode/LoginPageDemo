@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+
+.MAIN-h1 {
+    font-family: arial;
+    user-select: none;
+    font-size: 55px;
+}
+
+#user,
+#pass {
+    width: 400px;
+    height: 40px;
+    font-size: 27px;
+}
