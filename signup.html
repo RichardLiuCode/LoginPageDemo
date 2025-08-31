@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="firebase.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <input type="email" placeholder="Enter your email" id="user">
+    <br>
+    <input type="password" placeholder="Set your password" id="pass">
+    <br>
+    <button id="create">Sign UP</button>
+    <script>
+        document.getElementById("create").addEventListener("click", function () {
+            var email = document.getElementById("user").value;
+            var password = document.getElementById("pass").value;
+            auth.createUserWithEmailAndPassword(email, password)
+        })
+    </script>
+</body>
+
+</html>
