@@ -23,6 +23,13 @@
     <br>
     <p id="status"></p>
     <script>
+        window.onload = function () {
+            auth.onAuthStateChanged(function (user) {
+                if (user) {
+                    window.location.replace("main.html")
+                }
+            })
+        }
         document.getElementById("login").addEventListener("click", function () {
             var user = document.getElementById("user").value;
             var pass = document.getElementById("pass").value;
