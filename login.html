@@ -32,6 +32,9 @@
                 })
                 .catch(function (error) {
                     document.getElementById("status").innerText = error;
+                    setTimeout(function () {
+                        document.getElementById("status").innerText = ""
+                    }, 3150);
                 })
         })
     </script>
